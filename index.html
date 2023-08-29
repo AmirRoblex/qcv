@@ -115,17 +115,6 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx-iXJg761-16dcn7BhrDBcWc5uL_A-mhs3FPWA93LabMM0afeMZmx9bweSFxfxlVSjHA/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 
   </body>
 </html>
